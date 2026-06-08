@@ -116,7 +116,7 @@ do
   vim.o.mouse = 'a'
 
   -- Don't show the mode, since it's already in the status line
-  vim.o.showmode = false
+  vim.o.showmode = falsejk
 
   -- Sync clipboard between OS and Neovim.
   --  Schedule the setting after `UiEnter` because it can increase startup-time.
@@ -181,6 +181,9 @@ do
   -- Clear highlights on search when pressing <Esc> in normal mode
   --  See `:help hlsearch`
   vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
+  -- Exit insert mode by pressing jk
+  vim.keymap.set('i', 'jk', '<Esc>')
 
   -- Diagnostic Config & Keymaps
   --  See `:help vim.diagnostic.Opts`
