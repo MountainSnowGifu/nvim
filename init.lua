@@ -116,7 +116,7 @@ do
   vim.o.mouse = 'a'
 
   -- Don't show the mode, since it's already in the status line
-  vim.o.showmode = falsejk
+  vim.o.showmode = false
 
   -- Sync clipboard between OS and Neovim.
   --  Schedule the setting after `UiEnter` because it can increase startup-time.
@@ -165,7 +165,7 @@ do
   vim.o.cursorline = true
 
   -- Show which column your cursor is on
-  --vim.o.cursorcolumn = true
+  vim.o.cursorcolumn = true
 
   -- Minimal number of screen lines to keep above and below the cursor.
   vim.o.scrolloff = 10
